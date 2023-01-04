@@ -1,0 +1,114 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size:xx-large;
+    white-space: nowrap;
+}
+
+header {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid black;
+    position: sticky;
+    top: 10px;
+}
+
+.myPhoto {
+    margin: 5px 20px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 200px;
+    transition: all 0.5s ease-out;
+}
+
+.mainText {
+    width: 70%;
+    padding: 15px;
+    margin: 5px auto;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.addition {
+    width: 70%;
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+}
+
+.last-card {
+    width: 400%;
+}
+
+.cards-text {
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+}
+
+.contacts {
+    color: black;
+    font-size: larger;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (any-hover: hover) {
+    .myPhoto:hover {
+        width: 210px;
+        margin: 0px 20px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 1100px) {
+    .addition {
+        grid-template-columns: 50% 50%;
+    }
+
+    .last-card {
+        width: 200%;
+    }
+}
+
+@media (max-width: 752px) {
+    header {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .addition {
+        grid-template-columns: 100%;
+    }
+    .last-card {
+        width: 100%;
+    }
+}
